@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+  <title>קפה</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {}
+
+  body,
+  input,
+  label {
+    font-family: 'Heebo'
+  }
+
+  input,
+  label {
+    font-size: 1.2rem;
+  }
+
+
+
+  .container {
+    width: 100vw;
+    display: flex;
+  }
+
+  .right_side {
+    direction: rtl;
+    margin-top: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .form-wrapper3 {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 40%;
+
+  }
+
+  .form-wrapper3 h1 {
+    line-height: 1.5;
+    font-weight: 800;
+    font-size: 2.7rem;
+  }
+
+  .form-wrapper3 p {
+    line-height: 1.5;
+    font-size: 1.25rem;
+    text-align: justify;
+  }
+
+  .form_coffee {
+
+    display: flex;
+
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .form_coffee label {
+    font-weight: 600;
+    display: flex;
+    margin-bottom: -12px;
+
+  }
+
+  .form_coffee input[type="text"] {
+
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #020253;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .form_coffee input[type="submit"] {
+    font-weight: 600;
+    width: 40%;
+    color: #ffffff;
+    background-color: #020253;
+    padding: 6px 18px;
+    margin-top: 10px;
+  }
+
+  .coffee_img_box {
+
+    width: 50%;
+    height: auto;
+    min-height: 100vh;
+    background-image: url("/img/Coffee.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .breathe {
+    animation: breatheCoffee 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes breatheCoffee {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1.03);
+      opacity: 0.97;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .container {
+      flex-direction: column;
+    }
+
+
+
+    .coffee_img_box {
+      width: 100%;
+      height: 50vh;
+      min-height: unset;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right_side {
+      width: 100%;
+      margin-top: 0;
+      justify-content: center;
+    }
+
+    .form-wrapper3 {
+      width: 80%;
+      padding: 40px 30px;
+    }
+
+    .form-wrapper3 h1 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    .form-wrapper3 p {
+      text-align: center;
+      font-size: 1.25rem;
+    }
+
+    .form_coffee input[type="submit"] {
+      width: 60%;
+      align-self: center;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+
+
+    .coffee_img_box,
+    .right_side {
+      width: 100%;
+      justify-content: center;
+      margin-top: 0;
+      /* מבטל את המרווח הענק */
+    }
+
+    .coffee_img_box {
+
+
+      width: 100%;
+      height: auto;
+      min-height: 30vh;
+      background-image: url("/img/Coffee.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .form-wrapper3 {
+      width: 90%;
+      padding: 20px;
+    }
+
+    .form_coffee input[type="submit"] {
+      width: 100%;
+    }
+
+    .form-wrapper3 h1 {
+      text-align: center;
+      line-height: 1.5;
+      font-weight: 800;
+      font-size: 3rem;
+    }
+
+    .form-wrapper3 p {
+      line-height: 1.5;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .form_coffee label {
+
+      margin-bottom: -8px;
+
+    }
+
+    .form_coffee input[type="submit"] {
+      font-size: 1.3rem;
+
+      padding: 12px 22px;
+
+    }
+  }
+</style>
+
+<body>
+  <section class="container">
+    <div class="coffee_img_box breathe "></div>
+    <div class="right_side">
+      <div class="form-wrapper3">
+        <h1>קפה טוב לבוקר טוב</h1>
+        <p>לקבלת קופון לקפה חינם ומפנק שיפתח לכם את היום בחיוך, יש למלא את הפרטים:</p>
+        <form class="form_coffee" action="">
+          <label for="">שם מלא</label>
+          <input type="text">
+          <label for="">דוא״ל</label>
+          <input type="text">
+          <input type="submit" value="שליחה">
+        </form>
+      </div>
+    </div>
+    <script></script>
+
+
+
+  </section>
+
+
+</body>
+
+</html>

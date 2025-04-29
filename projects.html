@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <title>עבודות נבחרות</title>
+  <style>
+    .card {
+      overflow: hidden;
+      height: 500px;
+    }
+
+    .mycard-img-warper {
+      width: 100%;
+      height: 220px;
+
+      width: auto;
+      overflow: hidden;
+    }
+
+    .card-img:hover {
+      transform: scale(1.1);
+    }
+
+    .card-img {
+      width: 100%;
+      transition: all 0.6s ease;
+
+      object-fit: cover;
+    }
+
+
+
+
+    .my-btn-pink:hover {
+      background-color: #f04664;
+      border: 0 solid #000;
+    }
+
+    .my-btn-pink {
+      background-color: #ffffff;
+      color: #f04664;
+      border: 1px solid #f04664;
+    }
+
+    .mycard {
+      border: 0;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+
+    /* .circle-warper {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    } */
+    .bg-circle-2 {
+
+      z-index: -500;
+      background: radial-gradient(circle,
+          var(--color-bg-main) 0%,
+          /* אפרסקי */
+          var(--color-btn-bg) 50%,
+          /* ורוד עז */
+          var(--color-bg-deep) 100%
+          /* כחול כהה */
+        );
+      position: absolute;
+
+      /* 👈 להוסיף גובה */
+      border-radius: 50%;
+    }
+
+    .bg-circle-1-2 {
+      opacity: 0.7;
+      top: -400px;
+      left: -400px;
+      width: 1000px;
+      height: 1000px;
+    }
+
+    .bg-circle-2-2 {
+      box-shadow: inset 40px 30px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+      opacity: 0.7;
+      top: 100px;
+      left: 600px;
+      width: 400px;
+      height: 400px;
+    }
+
+    .bg-circle-3-2 {
+      box-shadow: inset 40px 30px 10px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+      opacity: 0.9;
+      bottom: -400px;
+      right: -100px;
+      width: 1000px;
+      height: 1000px;
+    }
+
+    .bg-circle-4-2 {
+      box-shadow: inset 40px 30px 10px rgba(0, 0, 0, 0.3), inset -4px -4px 8px rgba(255, 255, 255, 0.7);
+      opacity: 0.9;
+      top: -300px;
+      right: -200px;
+      width: 600px;
+      height: 600px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top ">
+    <div class="fix-bg container-fluid">
+      <!-- logo -->
+      <a class="my-navbar-brand  fs-2 " href="#myindex"><img src="SVG/logo1_1.svg" alt=""></a>
+
+
+
+
+      <!-- hamburger -->
+      <button class="navbar-toggler mywhite" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mywhite"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-white bg-sm-dark" id="navbarNavAltMarkup">
+
+
+        <!-- navbar right -->
+        <div class="navbar-nav ms-auto gap-5 " style="direction: rtl;">
+          <a class="nav-link  fs-4" aria-current="page" href="index.html?from=projects">דף הבית</a>
+          <a class="nav-link active fs-4" href="#">פרוייקטים</a>
+          <a class="nav-link fs-4 " href="aboutme.html">אודות</a>
+          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="#" style="text-align:right;">צרו קשר</a>
+
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <header>
+
+    <!-- <div class="circle-warper"> -->
+    <div class="bg-circle-1-2 bg-circle-2"></div>
+    <div class="bg-circle-2-2 bg-circle-2"></div>
+    <div class="bg-circle-3-2 bg-circle-2"></div>
+    <div class="bg-circle-4-2 bg-circle-2"></div>
+    <!-- </div> -->
+    <div class="container selected_projects_header mt-5 ">
+      <h1 class="mb-4 lh-base ">עבודות נבחרות </h1>
+      <p class="lead">
+        כאן תוכלו למצוא מבחר דפי נחיתה מעוצבים, שכל אחד מהם מותאם אישית לקונספט ייחודי ומעביר את המסר בצורה חדה וברורה.
+        כל
+        פרויקט משלב בין עיצוב מוקפד לחוויית משתמש מיטבית, ומיועד להוביל לפעולה.
+      </p>
+
+    </div>
+
+
+  </header>
+
+  <!-- cards -->
+  <hr class="custom-hr">
+  <div class="container-lg text-center ">
+
+    <div class="row mb-5 ">
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-warper">
+            <img src="/img/cards_img/project1.png" class="card-img" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <h4>LeadWay</h4>
+              <h5>חברה לייעוץ עסקי</h5>
+            </div>
+            <p class="card-text">
+              דף נחיתה המעוצב בסגנון נקי ומזמין, המשלב אנימציה חיה ברקע ליצירת חוויית משתמש דינמית ומודרנית...
+            </p>
+            <a href="global.html" class="btn btn-primary my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-warper">
+            <img src="/img/cards_img/project2.png" class="card-img" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <h4>Here&Now</h4>
+              <h5>חנות מתנות אונליין</h5>
+            </div>
+            <p class="card-text">
+              עיצוב ובניית דף נחיתה לחברת מתנות אונליין, עם דגש על חוויית משתמש זורמת, הצגת קטגוריות בצורה ברורה והנעה
+              לרכישה מהירה.
+            </p>
+            <a href="global.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-warper"> <img src="/img/cards_img/project3.png" class="card-img" alt="..."></div>
+          <div class="card-body">
+            <div class="card-title">
+              <h4>Coffee House</h4>
+              <h5>בית קפה</h5>
+            </div>
+            <p class="card-text">דף נחיתה שיווקי לחלוקת קופון לקפה חינם, עם עיצוב המזמין לפעולה, טופס רספונסיבי
+              ואנימציית נשימה לתמונת הרקע.
+            </p>
+            <a href="global.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row  mb-5">
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-top"><img src="/img/cards_img/project4.png" class="card-img-new " alt="..."></div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-top"> <img src="/img/cards_img/project5.png" class="card-img-new " alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <div class="card mycard">
+          <div class="mycard-img-top"> <img src="/img/cards_img/project6.png" class="card-img-new " alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="/JS/globleJS.js"></script>
+
+  <script src="js/logo.js"></script>
+
+
+</body>
+
+</html>

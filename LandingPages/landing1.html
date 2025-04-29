@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>דף חיתה</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/landing1.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <a class="back-button" href="/projects.html">back<svg xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        style="width: 24px; height: 24px; margin-right: 3px;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+      </svg></a>
+
+
+    <div id="anim"></div>
+    <section class="hero">
+      <img src="/img/Path15c.png" alt="">
+      <div class="form-wrapper">
+        <h2>תן לנו להוביל אותך קדימה</h2>
+        <p>אנחנו מציעים לך שירות אישי, מקצועי וללא התחייבות, שיסייע לך להגיע
+          ליעדים שלך
+          במהירות .
+        </p>
+        <form>
+          <label for="name">שם מלא</label>
+          <input type="text" id="name" />
+
+          <label for="email">דוא״ל</label>
+          <input type="text" id="email" />
+
+          <input type="submit" value="שליחה" />
+        </form>
+
+      </div>
+      <script>// תזוזה של הטופס
+        window.addEventListener("load", () => {
+          const form = document.querySelector(".form-wrapper");
+          form.style.top = "-40px"; // תזוזה למעלה
+        });</script>
+    </section>
+    <script src="/js/lottie.js"></script>
+    <script src="/js/anim1.js"></script>
+  </div>
+</body>
+
+</html>

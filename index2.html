@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>HOME</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .all-myservice h1 {
+      margin-top: 100px;
+      font-size: 4rem;
+      text-align: center;
+    }
+
+    .clock-warpper {
+      position: fixed;
+      top: 500px;
+      right: 0;
+      background-color: rgb(255, 255, 255);
+      color: var(--color-bg-deep);
+      padding: 20px 30px;
+      padding-left: 60px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      z-index: 9999;
+      clip-path: polygon(0 50%, 10% 0, 100% 0, 100% 100%, 10% 100%);
+
+      box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .clock-warpper #clock {
+      font-size: 2rem;
+    }
+
+    .about-img {
+      z-index: -100000;
+      flex: 0 0 600px;
+      /* גודל קבוע לתמונה */
+      position: sticky;
+      top: 70px;
+      /* כמה רחוק מהחלק העליון */
+      height: 700px;
+    }
+
+    .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+
+    }
+
+    .aboutme-warpper {
+
+      background-color: white;
+    }
+
+    .about-text h2 {
+      margin-top: 36px;
+    }
+
+    .about-text {
+      direction: rtl;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+
+    .features {
+      margin-right: 100px;
+    }
+
+    .contactme {
+      background: linear-gradient(to top,
+          var(--color-bg-main) 0%,
+          var(--color-btn-bg) 25%,
+          var(--color-text-sub) 50%,
+
+          var(--color-navy-dark) 75%,
+          var(--color-bg-deep) 100%);
+
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      direction: rtl;
+      gap: 60px;
+      height: 100vh;
+    }
+
+    .contactme-form-head {
+      padding-bottom: 30px;
+
+      font-size: 2rem;
+    }
+
+    .contactme-form input {
+      background-color: transparent;
+      padding: 10px;
+      border: 0 solid;
+      border-bottom: 1px solid #ffffff;
+      border-radius: 0;
+    }
+
+    .contactme-form {
+      font-size: 1.2rem;
+      color: white;
+    }
+
+    .padding-left {
+      padding-left: 40px;
+    }
+
+    /* LOGO */
+    .my-navbar-brand {
+      position: absolute;
+      left: 10PX;
+    }
+
+    /* LOGO ANIMATION */
+    .logo-wrapper {
+      z-index: 300000;
+      position: absolute;
+      width: 100vw;
+      height: 120vh;
+      top: -100px;
+      background: var(--color-bg-deep);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-family: 'Courier New', monospace;
+    }
+
+    .logo {
+      cursor: pointer;
+      font-size: 5rem;
+
+      color: white;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-link {
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+
+      display: inline-block;
+    }
+
+    .left {
+
+
+      animation: rotateLeft 1s ease-out 1s forwards;
+    }
+
+    .right {
+      margin-right: 10px;
+      animation-delay: 1s;
+      animation: moveAndRotateRight 2s ease-out forwards;
+
+    }
+
+    .text {
+      font-weight: 200;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      /* animation-delay: 2s; */
+    }
+
+    @media (max-width: 768px) {
+      .left {
+        margin-right: -5px;
+      }
+    }
+
+    @keyframes rotateLeft {
+      to {
+        transform: rotate(90deg) scale(1.4) translateY(-10px);
+        opacity: 1;
+      }
+    }
+
+    @keyframes moveAndRotateRight {
+      0% {
+        transform: translateX(350px);
+        opacity: 1;
+      }
+
+      20% {
+        transform: translateX(350px);
+        opacity: 1;
+      }
+
+
+      50% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      100% {
+        transform: rotate(-90deg) scale(1.4);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      font-family: Arial, sans-serif;
+      color: #ccc;
+      opacity: 0;
+      animation: fadeIn 1s ease 2s forwards;
+      letter-spacing: 0.1em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- countdown -->
+  <div class="clock-warpper display-6 mt-4 ">
+    <p>Time until launch...</p>
+    <div id="clock" class="clock  "></div>
+  </div>
+
+  <!-- logo -->
+  <div id="logoWrapper" class="logo-wrapper">
+    <div class="logo">
+
+      <span class="left">&lt;</span>
+      <span class="right">&gt;</span>
+      <span class="text">ichal</span>
+
+    </div>
+    <p class="tagline"><a class="logo-link" href="#myindex">ARCHITECT > DEVELOPER</a></p>
+  </div>
+  <!-- NAVBAR -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top ">
+    <div class="container-fluid">
+
+      <!-- logo -->
+      <a class="my-navbar-brand navbar-brand fs-2 " href="#myindex"><img src="SVG/logo1_1.svg" alt=""></a>
+
+
+
+      <!-- hamburger -->
+      <button class="navbar-toggler mywhite" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mywhite"></span>
+      </button>
+
+      <div class="collapse navbar-collapse text-white bg-sm-dark" id="navbarNavAltMarkup">
+
+
+
+        <!-- navbar right -->
+        <!-- navbar right -->
+        <div class="navbar-nav ms-auto gap-5 " style="direction: rtl;">
+          <a class="nav-link active fs-4" aria-current="page" href="#">דף הבית</a>
+          <a class="nav-link fs-4" href="projects.html">פרוייקטים</a>
+          <a class="nav-link fs-4 " href="#aboutMe">אודות</a>
+          <a class=" fs-4 my-contect-us-btn  " href="#contactMe" style="text-align:right;">צרו קשר</a>
+
+
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header-->
+  <header class="masthead text-center text-white  ">
+
+
+
+
+    <div id="my-index" class="masthead-content ">
+      <div class="container">
+
+
+
+        <a class="btn btn-primary btn-xl mybutton mydark_button mt-5" href="projects.html">MY WORK</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+
+  </header>
+  <!-- service section 1-->
+  <section class="all-myservice  reveal">
+    <h1 class="hand-drawn-underline">השירותים שלי</h1>
+    <section id="scroll">
+      <div class="container px-5 direction-rtl">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5 "><img class="img-fluid rounded-circle img_rotate " src="img/service1.png"
+                style="object-fit: cover" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5 align-right">
+              <div class=" row heaingWithLogo"><img class="col-2" src="img/graphic-design.svg" alt="">
+                <h2 class="col-10 display-5">עיצוב וקריאייטיב</h2>
+              </div>
+              <ul class=" mt-4 fs-5 features">
+                <li class="mb-2">עיצוב ממשקים (UI) מודרניים ונקיים</li>
+                <li class="mb-2">יצירת אנימציות וקטוריות (Lottie / Bodymovin)</li>
+                <li class="mb-2">עיצוב לוגואים, מצגות, אייקונים ובאנרים</li>
+                <li class="mb-2">התאמת חוויית משתמש לקהל היעד (UX בסיסי)</li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="myservice">
+      <div class="container px-5 ">
+        <div class="row gx-5 align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5 "><img class="img-fluid rounded-circle " src="img/service2.png" style="object-fit: cover" />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 align-right">
+            <div class="p-5">
+              <h2 class="display-5">פיתוח אתרים ואפליקציות</h2>
+              <ul class="me-4 mt-4 fs-5">
+                <li class="mb-2">עיצוב ממשקים (UI) מודרניים ונקיים</li>
+                <li class="mb-2">יצירת אנימציות וקטוריות (Lottie / Bodymovin)</li>
+                <li class="mb-2">עיצוב לוגואים, מצגות, אייקונים ובאנרים</li>
+                <li class="mb-2">התאמת חוויית משתמש לקהל היעד (UX בסיסי)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about me -->
+    <section id="aboutMe" class="aboutme">
+      <div class="about-img"> <img src="img/dfgdgddgdgdgd.jpg" alt=""> </div>
+      <div class="aboutme-warpper">
+        <div class=" container about-text">
+          <h2>קצת עלי...</h2>
+          <p class="align-right fs-3 mt-5 ">שמי מיכל, אדריכלית בהכשרתי ומתכנתת בהתהוות.
+            את דרכי בעולם היצירה התחלתי כבר בלימודי האדריכלות, שם למדתי לתכנן, לדייק, ולחשוב על חוויות של אנשים במרחב
+            הפיזי.
+            במשך
+            שנים עסקתי בתכנון ועיצוב — בניתי רעיונות, מרחבים וחוויות, תוך הקפדה על כל פרט ופרט.
+
+            עם הזמן, הבנתי שהכישרון שלי לראות את התמונה הגדולה לצד הפרטים הקטנים, יכול לשרת אותי גם בעולם אחר — עולם
+            הפיתוח
+            והדיגיטל. עולם שבו גם קוד הוא סוג של בנייה: של מבנה לוגי, של חוויית משתמש, ושל יצירה חכמה.
+
+            המעבר לעולם הפיתוח היה עבורי טבעי: אני רואה בכל דף נחיתה פרויקט תכנוני; בכל שורת קוד — לבנה בבניין של חוויית
+            משתמש. אני
+            משלבת את הדיוק והחשיבה האדריכלית עם גישה חדשנית לעיצוב ופיתוח אתרים רספונסיביים, חכמים ומרשימים.
+
+            בעבודותיי אני שמה דגש על:
+
+            תכנון נכון של חוויית משתמש (UX)
+
+            עיצוב נקי וברור (UI)
+
+            קוד איכותי ותחזוקתי
+
+            חשיבה יצירתית שמחברת בין רעיון למציאות
+
+            היום, אני משלבת את האהבה שלי לאסתטיקה עם אהבה אמיתית לטכנולוגיה — ובונה עולמות דיגיטליים שמחברים בין תכנון,
+            עיצוב
+            וחוויית משתמש.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Contact me Form -->
+    <div id="contactMe" class="container-fluid mt-4 contactme">
+
+      <form class="contactme-form container">
+        <h2 class="contactme-form-head mb-4">
+          ליצירת קשר:
+        </h2>
+        <div class="row row-cols-1 row-cols-md-2  ">
+          <div class="mb-3 col padding-left">
+            <label for="firstName" class="form-label">שם פרטי:</label>
+            <input type="text" class="form-control" id="firstName" aria-describedby="firstName">
+          </div>
+          <div class="mb-3 col">
+            <label for="lastName" class="form-label">שם משפחה:</label>
+            <input type="text" class="form-control" id="lastName">
+          </div>
+        </div>
+        <div class="row  row-cols-1 row-cols-md-2 ">
+          <div class="mb-3 col padding-left ">
+            <label for="exampleInputEmail1" class="form-label">אימייל:</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3 col">
+            <label for="phoneNumber" class="form-label">טלפון:</label>
+            <input type="number" class="form-control" id="phoneNumber">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+
+    <script>
+
+
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 5, 2026 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("clock").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      const textElement = document.getElementById("responsive-text");
+
+      function updateText() {
+        if (window.innerWidth <= 768) {
+          textElement.textContent = "architect turned developer";
+        } else {
+          textElement.innerHTML = "Former architect . <strong>Current developer</strong>";
+        }
+      }
+
+
+      window.addEventListener("resize", updateText);
+      window.addEventListener("load", updateText);
+      console.log("Script loaded!");
+
+      // logo
+      const logo = document.getElementById('logoWrapper')
+      logo.addEventListener('click', () => logo.style.display = 'none')
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
+    <script src="/JS/globleJS.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+ * {
+   margin: 0;
+
+   padding: 0;
+
+   box-sizing: border-box;
+ }
+
+ :root {
+   /* 🎨 צבעי רקע */
+   --color-bg-main: #F8B195;
+   /* ורדרד אפרסקי עליון */
+   --color-bg-deep: #355C7D;
+   /* כחול כהה תחתון */
+   --color-navy-dark: #6C5B7B;
+   /* סגול כהה מעושן */
+
+   /* 🖋️ צבעי טקסט */
+   --color-text-main: #FFFFFF;
+   /* טקסט ראשי - לבן */
+   --color-text-sub: #C06C84;
+   /* טקסט משני - סגול ורדרד */
+   --color-text-dark: #1C1C1C;
+   /* טקסט כהה רגיל */
+
+   /* 🔘 צבעי כפתורים */
+   --color-btn-bg: #F67280;
+   /* רקע כפתור ורוד בולט */
+   --color-btn-text: #FFFFFF;
+   /* טקסט כפתור לבן */
+   --color-btn-hover: #C06C84;
+   /* רקע כפתור במעבר - סגול ורדרד רך */
+
+   /* ✨ אפקטים */
+   --radius-rounded: 12px;
+   --transition-fast: 0.3s ease;
+   --font-main: 'Open Sans', sans-serif;
+ }
+
+
+ .card {
+   height: 500px;
+ }
+
+ .card-text {
+   direction: rtl;
+ }
+
+ .selected_projects_header {
+   flex-direction: column;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+
+ }
+
+ .selected_projects_header p {
+   direction: rtl;
+   font-weight: 600;
+   color: var(--color-navy-dark);
+   text-align: center;
+
+   font-size: 1.5rem;
+ }
+
+
+ .selected_projects_header h1 {
+   color: var(--color-navy-dark);
+   font-size: 4rem;
+ }
+
+
+ .navbar {
+
+   background-color: #1c1c1cb6;
+
+   backdrop-filter: blur(0px);
+   padding: 10px 0;
+ }
+
+ .navbar-brand {
+   color: var(--color-navy-dark);
+ }
+
+ .navbar-nav .nav-link,
+
+ .navbar-nav .nav-link.active,
+ .navbar-nav .nav-link[aria-current="page"] {
+   color: white
+ }
+
+
+
+
+
+ @media (max-width: 1300px) {
+   .navbar {
+     margin-top: 0;
+     background-color: var(--color-navy-dark);
+     padding: 0;
+   }
+
+   .navbar-nav .nav-link,
+
+   .navbar-nav .nav-link.active,
+   .navbar-nav .nav-link[aria-current="page"] {
+     color: var(--color-btn-bg);
+   }
+ }
+
+ @media (max-width: 1000px) {
+   .selected_projects_header {
+     height: auto;
+
+   }
+
+   .selected_projects_header p {
+     font-size: 1rem;
+   }
+
+   .selected_projects_header h1 {
+     font-size: 2rem;
+   }
+
+ }

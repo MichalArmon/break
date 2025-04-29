@@ -1,0 +1,111 @@
+:root {
+  /* 🎨 צבעי רקע */
+  --color-bg-main: #F8B195;
+  /* ורדרד אפרסקי עליון */
+  --color-bg-deep: #355C7D;
+  /* כחול כהה תחתון */
+  --color-navy-dark: #6C5B7B;
+  /* סגול כהה מעושן */
+
+  /* 🖋️ צבעי טקסט */
+  --color-text-main: #FFFFFF;
+  /* טקסט ראשי - לבן */
+  --color-text-sub: #C06C84;
+  /* טקסט משני - סגול ורדרד */
+  --color-text-dark: #1C1C1C;
+  /* טקסט כהה רגיל */
+
+  /* 🔘 צבעי כפתורים */
+  --color-btn-bg: #F67280;
+  /* רקע כפתור ורוד בולט */
+  --color-btn-text: #FFFFFF;
+  /* טקסט כפתור לבן */
+  --color-btn-hover: #C06C84;
+  /* רקע כפתור במעבר - סגול ורדרד רך */
+
+  /* ✨ אפקטים */
+  --radius-rounded: 12px;
+  --transition-fast: 0.3s ease;
+  --font-main: 'Open Sans', sans-serif;
+}
+
+
+html {
+
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3A3A3A;
+}
+
+.project_header {
+  direction: rtl;
+  margin-top: -100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(circle,
+      var(--color-bg-main) 0%,
+      /* אפרסקי */
+      var(--color-btn-bg) 50%,
+      /* ורוד עז */
+      var(--color-bg-deep) 100%
+      /* כחול כהה */
+    );
+  height: 550px;
+  /* overflow: hidden; */
+  position: relative;
+
+}
+
+#anim2 {
+  mix-blend-mode: overlay;
+  opacity: 0.3;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.project_header h1 {
+  line-height: 1.7;
+  font-size: 3rem;
+  text-align: center;
+
+
+}
+
+.project_header h2 {
+  line-height: 1.7;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+
+.project_header p {
+  width: 40vw;
+  line-height: 1.7;
+  margin: 0 auto;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.img_project1_box {
+
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 45vw;
+}
+
+.img_project1 {
+  cursor: pointer;
+  border-radius: 30px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}

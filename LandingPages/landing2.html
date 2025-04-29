@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>דף נחיתה 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+    body {
+      color: white;
+      height: 100vh;
+
+      direction: rtl;
+      overflow: hidden;
+      background: linear-gradient(-100deg, #281EFF, #2DFF8C, #384aaf, #2DFF8C);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+    }
+
+    body,
+    input,
+    button,
+    textarea {
+      font-family: 'Varela Round', sans-serif;
+    }
+
+    .hero2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-wrapper2 {
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+      width: 60vw;
+
+
+    }
+
+    .hero2 h1 {
+      text-shadow: 0 0 36px rgba(0, 0, 0, 0.529);
+      line-height: 1.5;
+      font-family: 'Satisfy';
+      font-weight: 400;
+      font-size: 160px;
+    }
+
+    .hero2 h2 {
+      line-height: 1.5;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+
+    }
+
+    .hero2 p {
+      font-size: 1.125rem;
+      color: #F9F9F9;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .hero2 form {
+      display: grid;
+      grid-template-columns: 40% 40% 20%;
+
+      column-gap: 30px;
+      row-gap: 5px;
+    }
+
+    .hero2 input {
+      color: #525252;
+      font-size: 1.25rem;
+      padding: 20px 0;
+      background-color: #F6F6F624;
+      border: 2px solid #FFFFFF;
+      border-radius: 4px;
+    }
+
+    .hero2 input:focus-visible {
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.692);
+    }
+
+    .hero2 label {
+
+      text-align: right;
+      font-size: 1.2rem;
+    }
+
+
+
+    .hero2 label.email {
+      grid-column: 2/3;
+      grid-row: 1/2;
+
+    }
+
+    .hero2 #email {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .hero2 input[type="submit"] {
+      font-family: 'Varela Round', sans-serif;
+      color: #525252;
+      ;
+      background-color: #FFFFFF;
+      font-size: 1rem;
+      font-weight: 600;
+      grid-column: 3/4;
+      grid-row: 2/3;
+    }
+
+    .hero2 input[type="submit"]:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(45, 255, 140, 0.4);
+    }
+
+    .hero2 #name {
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+
+    @keyframes gradientShift {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero2 {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        margin-top: 150px;
+        height: 100vh;
+      }
+
+      .form-wrapper2 {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+
+
+      }
+
+
+      .hero2 form {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+
+        row-gap: 20px;
+      }
+
+      .hero2 h1 {
+        font-size: 4rem;
+        letter-spacing: 5px;
+
+      }
+
+      .hero2 h2 {
+        font-size: 1.5rem;
+
+      }
+
+      .hero2 p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+
+      }
+
+
+
+
+
+      .hero2 label {
+        margin-bottom: -16px;
+        font-size: 1rem;
+      }
+
+
+
+      .hero2 label.email {
+        grid-column: 1 / -1;
+        grid-row: auto;
+
+      }
+
+      .hero2 #email {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
+
+      .hero2 input[type="submit"] {
+        margin-top: 10px;
+        font-family: 'Varela Round', sans-serif;
+        color: #525252;
+        ;
+        background-color: #FFFFFF;
+        font-size: 0.9rem;
+        font-weight: 600;
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
+
+      .hero2 #name {
+        grid-column: 1 / -1;
+        grid-row: auto;
+      }
+
+      .hero2 input {
+        font-size: 1rem;
+        padding: 10px 0;
+
+      }
+
+      .hero2 input[type="submit"] {
+        font-size: 0.9rem;
+        padding: 10px 0;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero2">
+
+
+    <div class="form-wrapper2">
+      <h1>Here & Now</h1>
+      <h2>רצינו להזמין אתכם להנות משלל מתנות</h2>
+      <p>אנחנו מאמינים שהזמן הכי טוב לפנק את עצמך הוא עכשיו. במיוחד בשבילך – הכנו מבחר מתנות שוות, הטבות מפתיעות והשראה
+        יומית שתעשה לך טוב על הלב. </p>
+      <form>
+        <label for="name" class="name">שם מלא</label>
+        <input type="text" id="name" />
+
+        <label for="email" class="email">דוא״ל</label>
+        <input type="text" id="email" />
+
+        <input type="submit" value='עדכנו אותי' />
+      </form>
+    </div>
+
+
+
+  </section>
+  <script src="lottie.js"></script>
+
+</body>
+
+</html>
