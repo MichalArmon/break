@@ -2,19 +2,23 @@
 
 # Michal Armon
 
-Welcome to my personal portfolio!
-I’m a third-year CSE undergraduate at Bangladesh University of Professionals and a Microsoft Student Ambassador (Beta).
+Welcome to my personal portfolio!  
+I'm a multidisciplinary creator with a background in architecture, 3D visualization, and front-end development.
 
 ## About Me
 
-I have experience in cloud computing, low-code platforms, and technology communities.
+I’m currently transitioning into full-stack web development after several years of experience in architectural design and 3D rendering. I enjoy combining creativity with code to build beautiful, user-friendly digital experiences.
 
 ## Skills
 
-- Cloud Computing
-- GitHub & Git
-- Microsoft Power Platform
+- HTML, CSS, JavaScript
+- React & Node.js
+- WordPress & Elementor
+- Adobe Illustrator & Photoshop
+- 3D Rendering (V-Ray, SketchUp, Rhino)
+- Project presentation & storytelling
 
 ## Contact
 
-You can reach me at [LinkedIn](https://www.linkedin.com/in/your_linkedin_username) or [GitHub](https://github.com/your_github_username).
+You can reach me on [LinkedIn](https://www.linkedin.com/in/michalarmon)  
+or check out more projects on [GitHub](https://github.com/MichalArmon).
