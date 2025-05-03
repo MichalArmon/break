@@ -41,6 +41,41 @@
    --font-main: 'Open Sans', sans-serif;
  }
 
+ /* dev icons  */
+ .heading-With-icon {
+   gap: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .heading-With-icon img {
+
+   padding: 5px;
+   width: 50px;
+ }
+
+ .heading-With-icon h2 {
+   font-size: 2.3rem;
+ }
+
+ .dev-icons {
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   justify-content: center;
+   gap: 20px;
+   align-items: center;
+   padding: 20px auto;
+   height: 200px;
+   display: flex;
+ }
+
+ .dev-icons img {
+   width: 80px;
+ }
+
+
+
  .nav-link.active {
    font-weight: bold;
 
@@ -415,6 +450,13 @@
  }
 
  @media (max-width: 768px) {
+   .contactme-form-head {
+     text-align: center;
+     padding-bottom: 20px;
+
+     font-size: 2rem;
+   }
+
    .masthead-content-text {
      margin-top: -80px;
    }
@@ -493,14 +535,48 @@
    }
 
    .mybutton {
+     margin-top: 60px;
      border: none;
      padding: 0;
      text-transform: uppercase;
-     padding: 8px 16px;
-     font-size: 1rem;
+     padding: 16px 32px;
+     font-size: 1.2rem;
      font-weight: 600;
      letter-spacing: 0.1rem;
      /* border-radius: 40px */
+   }
+
+   /* dev icons  */
+   .heading-With-icon {
+     gap: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .heading-With-icon img {
+
+     padding: 5px;
+     width: 50px;
+   }
+
+   .heading-With-icon h2 {
+     font-size: 2.3rem;
+   }
+
+   .dev-icons {
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+     padding: 20px auto;
+     height: 200px;
+     display: flex;
+   }
+
+   .dev-icons img {
+     width: 80px;
    }
 
 
@@ -619,5 +695,21 @@
 
    .footer a:hover {
      text-decoration: underline;
+   }
+
+
+
+   .dev-icons {
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     justify-content: center;
+     gap: 20px;
+     align-items: center;
+     padding: 30px auto;
+     height: 100px;
+     display: flex;
+   }
+
+   .dev-icons img {
+     width: 55px;
    }
  }

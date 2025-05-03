@@ -20,7 +20,24 @@
 
     body {
       background: linear-gradient(135deg, var(--color-bg-main), var(--color-navy-dark));
+      background-size: 300% 300%;
+      animation: gradientMove 8s ease infinite;
+      color: white;
 
+    }
+
+    @keyframes gradientMove {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
     .contectme-warper {
@@ -44,10 +61,11 @@
       direction: rtl;
 
 
-      overflow: hidden;
+
     }
 
     .contactme-form-head {
+      padding-bottom: 50px;
       font-size: 2rem;
     }
 
@@ -60,15 +78,40 @@
     }
 
     .contactme-form {
-      padding: 100px;
-      border-radius: 40px;
-      background-color: #ffffff52;
+      border: 1px solid #ffffff;
+      padding: 200px 100px;
+      border-radius: 20px;
+      background-color: #ffffff31;
       font-size: 1.2rem;
       color: white;
     }
 
     .padding-left {
       padding-left: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .contactme-form-head {
+        text-align: center;
+        padding-bottom: 20px;
+
+        font-size: 2rem;
+      }
+
+      .contactme-form {
+        padding: 100px;
+        margin-bottom: 90px;
+        margin-top: 90px;
+      }
+
+      .btn my-form-btn {
+        width: 100%;
+      }
+
+      .contectme-warper {
+
+        height: auto
+      }
     }
   </style>
 </head>
@@ -141,7 +184,7 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary my-form-btn  "> שליחה <svg xmlns="http://www.w3.org/2000/svg"
+        <button type="submit" class="btn my-form-btn  "> שליחה <svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30" height="30" viewBox="0 0 256 256"
             xml:space="preserve">
             <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"

@@ -21,19 +21,19 @@ window.addEventListener("scroll", () => {
 //     navbarBtn.classList.remove("btn-navbar-scrolled");
 //   }
 // });
+// reveal
+// window.addEventListener("scroll", function () {
+//   const reveals = document.querySelectorAll(".reveal");
 
-window.addEventListener("scroll", function () {
-  const reveals = document.querySelectorAll(".reveal");
+//   reveals.forEach(function (reveal) {
+//     const windowHeight = window.innerHeight;
+//     const elementTop = reveal.getBoundingClientRect().top;
+//     const elementVisible = 100;
 
-  reveals.forEach(function (reveal) {
-    const windowHeight = window.innerHeight;
-    const elementTop = reveal.getBoundingClientRect().top;
-    const elementVisible = 100;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveal.classList.add("active");
-    } else {
-      reveal.classList.remove("active");
-    }
-  });
-});
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveal.classList.add("active");
+//     } else {
+//       reveal.classList.remove("active");
+//     }
+//   });
+// });

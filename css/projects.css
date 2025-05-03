@@ -46,29 +46,25 @@
    direction: rtl;
  }
 
- .selected_projects_header {
-   flex-direction: column;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-
-
-
- }
+ .selected_projects_header {}
 
  .selected_projects_header p {
    direction: rtl;
-   font-weight: 600;
-   color: var(--color-navy-dark);
+   font-weight: 500;
+   color: #1c1c1cb6;
    text-align: center;
 
    font-size: 1.5rem;
+   line-height: 1.5;
+   margin-bottom: 90px;
  }
 
 
  .selected_projects_header h1 {
-   color: var(--color-navy-dark);
-   font-size: 4rem;
+   color: var(--color-text-dark);
+   margin-top: 90px;
+   font-size: 3.5rem;
+   text-align: right;
  }
 
 

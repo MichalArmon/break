@@ -72,6 +72,15 @@ body {
   top: 0;
   left: 0;
 } */
+.my-line {
+  opacity: 0.7;
+  border: none;
+  height: 15px;
+  background-color: var(--color-btn-bg);
+  width: 35%;
+  margin: -10px 0 20px auto;
+
+}
 
 .project_header h1 {
   line-height: 1.7;
