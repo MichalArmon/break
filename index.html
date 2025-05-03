@@ -348,8 +348,8 @@
           <a class="nav-link active  fs-4" aria-current="page" href="index.html">דף הבית</a>
           <a class="nav-link  fs-4" href="projects.html">פרוייקטים</a>
           <a id="aboumeLink" class="nav-link fs-4 " href="#aboutMe">אודות</a>
-          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="#" style="text-align:right;">צרו קשר <svg
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="contactMe.html" style="text-align:right;">צרו קשר
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -371,18 +371,23 @@
     <div id="my-index" class="masthead-content ">
       <div class="container">
 
-        <h1 class="masthead-heading mb-0 lh-base">Hello, I'm Michal</h1>
-        <h2 class="masthead-subheading mb-4 lh-lg " id="responsive-text">Former architect <strong> Current
-            developer</strong>
-        </h2>
-        <p class=" mobile-hide ">Learning to code at <span style="font-size: 4rem;">40</span> taught me one thing: <br>
-          problem-solving is
-          timeless. <br> Proof that it’s never
-          too late
-          to start building
-          differently!</p>
+        <div class="masthead-content-text" id="pageHead">
+          <h1 class="masthead-heading mb-0 lh-base">Hello, I'm Michal</h1>
+          <h2 class="masthead-subheading mb-4 lh-lg " id="responsive-text">Former architect <strong> Current
+              developer</strong>
+          </h2>
+          <p class=" mobile-hide ">Learning to code at <span style="font-size: 4rem;">40</span> taught me one thing:
+            <br>
+            problem-solving is
+            timeless. <br> Proof that it’s never
+            too late
+            to start building
+            differently!
+          </p>
+          <a class="btn text-white btn-xl mybutton mydark_button mt-lg-5 mb-5" href="projects.html">MY WORK</a>
 
-        <a class="btn btn-primary btn-xl mybutton mydark_button mt-5" href="projects.html">MY WORK</a>
+        </div>
+
       </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
@@ -517,6 +522,23 @@
           </svg> </button>
       </form>
     </div>
+    <!-- footer  -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-content">
+          <span class="left-footer">© 2025 Michal.A, Inc</span>
+          <span class="center"><img src="SVG/logo1_1.svg" alt="" style="width: 150px;"></span>
+          <span class="right-footer">
+            <a href="#pageHead">דף בית</a>
+            <a href="projects.html">פרויקטים</a>
+            <a href="aboutme.html">אודות</a>
+            <a href="contactMe.html">צרו קשר</a>
+            <a href="#">הצהרת נגישות</a>
+          </span>
+        </div>
+      </div>
+    </footer>
+
 
 
     <script>
@@ -567,8 +589,7 @@
 
 
 
-      const aboutMe = document.getElementById('aboumeLink')
-      aboutMe.addEventListener('click', () => aboutMe.style.fontWeight = 'bold')
+
 
     </script>
 

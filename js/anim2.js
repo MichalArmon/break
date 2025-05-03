@@ -3,7 +3,7 @@ var animation = bodymovin.loadAnimation({
   renderer: "svg",
   loop: false,
   autoplay: true,
-  path: "data2.json",
+  path: "./js/data2.json",
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice", // זה חשוב!
   }, // או 'anim/ANIM2.json' אם שמת אותו בתיקייה

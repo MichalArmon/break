@@ -6,7 +6,8 @@ window.addEventListener("load", () => {
   const isReload =
     performance.getEntriesByType("navigation")[0].type === "reload";
 
-  if ((from === "projects" || from === "aboutme") && !isReload) {
+  const skipLogoPages = ["projects", "aboutme", "global", "project1"];
+  if (skipLogoPages.includes(from) && !isReload) {
     logo.style.display = "none";
     document.body.style.overflow = "auto";
   } else {

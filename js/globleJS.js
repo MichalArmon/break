@@ -10,17 +10,17 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// navbar button changing colors
+// // navbar button changing colors
 
-const navbarBtn = document.getElementById("navbarBtn");
+// const navbarBtn = document.getElementById("navbarBtn");
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    navbarBtn.classList.add("btn-navbar-scrolled");
-  } else {
-    navbarBtn.classList.remove("btn-navbar-scrolled");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (window.scrollY > 400) {
+//     navbarBtn.classList.add("btn-navbar-scrolled");
+//   } else {
+//     navbarBtn.classList.remove("btn-navbar-scrolled");
+//   }
+// });
 
 window.addEventListener("scroll", function () {
   const reveals = document.querySelectorAll(".reveal");

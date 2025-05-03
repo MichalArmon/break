@@ -17,6 +17,7 @@
   <title>עבודות נבחרות</title>
   <style>
     .card {
+      border: 0 solid #000;
       overflow: hidden;
       height: 500px;
     }
@@ -43,19 +44,9 @@
 
 
 
-    .my-btn-pink:hover {
-      background-color: #f04664;
-      border: 0 solid #000;
-    }
-
-    .my-btn-pink {
-      background-color: #ffffff;
-      color: #f04664;
-      border: 1px solid #f04664;
-    }
 
     .mycard {
-      border: 0;
+      border: 0 solid #000;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
@@ -115,10 +106,30 @@
       width: 600px;
       height: 600px;
     }
+
+    @media (max-width: 1300px) {}
+
+    @media (max-width: 768px) {
+      .card {
+        margin: 0 auto;
+        width: 90%;
+        height: 100%;
+        margin-bottom: 20px;
+
+      }
+
+      .card-title {
+        margin-top: 0;
+      }
+
+      .my-btn-see-project {
+        margin-top: 40px;
+      }
+    }
   </style>
 </head>
 
-<body>
+<body class="projects-page-body-color">
   <nav id="mainNavbar" class="navbar navbar-expand-lg sticky-top ">
     <div class="fix-bg container-fluid">
       <!-- logo -->
@@ -142,8 +153,12 @@
           <a class="nav-link  fs-4" aria-current="page" href="index.html?from=projects">דף הבית</a>
           <a class="nav-link active fs-4" href="#">פרוייקטים</a>
           <a class="nav-link fs-4 " href="aboutme.html">אודות</a>
-          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="#" style="text-align:right;">צרו קשר</a>
-
+          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="#" style="text-align:right;">צרו קשר <svg
+              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+            </svg></a>
 
         </div>
 
@@ -173,12 +188,12 @@
   </header>
 
   <!-- cards -->
-  <hr class="custom-hr">
-  <div class="container-lg text-center ">
 
-    <div class="row mb-5 ">
-      <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
+  <div class="container-lg text-center my-cards container ">
+
+    <div class="row mb-4">
+      <div class="col-lg-4 col-sm-12 mb-4 ">
+        <div class="card mycard mb-5">
           <div class="mycard-img-warper">
             <img src="/img/cards_img/project1.png" class="card-img" alt="...">
           </div>
@@ -190,8 +205,9 @@
             <p class="card-text">
               דף נחיתה המעוצב בסגנון נקי ומזמין, המשלב אנימציה חיה ברקע ליצירת חוויית משתמש דינמית ומודרנית...
             </p>
-            <a href="global.html" class="btn btn-primary my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <a href="/middle-stage/project1.html" class="btn btn-primary my-btn-pink my-btn-see-project"
+              style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -199,10 +215,10 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
+      <div class="col-lg-4 col-sm-12 mb-4">
+        <div class="card mycard mb-5">
           <div class="mycard-img-warper">
-            <img src="/img/cards_img/project2.png" class="card-img" alt="...">
+            <img src="/img/cards_img/project2.png" class="card-img" alt="Here&Now-project preview picture ">
           </div>
           <div class="card-body">
             <div class="card-title">
@@ -213,8 +229,8 @@
               עיצוב ובניית דף נחיתה לחברת מתנות אונליין, עם דגש על חוויית משתמש זורמת, הצגת קטגוריות בצורה ברורה והנעה
               לרכישה מהירה.
             </p>
-            <a href="global.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <a href="/middle-stage/project2.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -223,7 +239,7 @@
         </div>
       </div>
       <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
+        <div class="card mycard mb-4 ">
           <div class="mycard-img-warper"> <img src="/img/cards_img/project3.png" class="card-img" alt="..."></div>
           <div class="card-body">
             <div class="card-title">
@@ -233,8 +249,8 @@
             <p class="card-text">דף נחיתה שיווקי לחלוקת קופון לקפה חינם, עם עיצוב המזמין לפעולה, טופס רספונסיבי
               ואנימציית נשימה לתמונת הרקע.
             </p>
-            <a href="global.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה בפרוייקט<svg
-                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <a href="middle-stage/project3.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
                 <path stroke-linecap="round" stroke-linejoin="round"
                   d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
@@ -243,42 +259,67 @@
         </div>
       </div>
     </div>
-    <div class="row  mb-5">
+    <div class="row mb-5">
       <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
-          <div class="mycard-img-top"><img src="/img/cards_img/project4.png" class="card-img-new " alt="..."></div>
+        <div class="card mycard mb-4">
+          <div class="mycard-img-top"><img src="/img/cards_img/project4.png" class="card-img " alt="..."></div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
+            <div class="card-title">
+              <h4>Nova&Co</h4>
+              <h5>פיתוח מערכות</h5>
+            </div>
+            <p class="card-text">פיתוח דף נחיתה רספונסיבי לחברת Nova&Co, כולל טופס הרשמה, עיצוב מותאם אישית, והתאמה מלאה
+              לדסקטופ ולמובייל באמצעות HTML,
+              CSS ו־Bootstrap.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="/middle-stage/project4.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
-          <div class="mycard-img-top"> <img src="/img/cards_img/project5.png" class="card-img-new " alt="...">
-          </div>
+        <div class="card mycard mb-4">
+          <div class="mycard-img-top"><img src="/img/cards_img/project6.png" class="card-img " alt="..."></div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
+            <div class="card-title">
+              <h4>Mindset</h4>
+              <h5>פיתוח אסטרטגיה</h5>
+            </div>
+            <p class="card-text">פיתוח דף נחיתה רספונסיבי לחברת Nova&Co, כולל טופס הרשמה, עיצוב מותאם אישית, והתאמה מלאה
+              לדסקטופ ולמובייל באמצעות HTML,
+              CSS ו־Bootstrap.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="/middle-stage/project6.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
           </div>
         </div>
       </div>
       <div class="col-lg-4 col-sm-12">
-        <div class="card mycard">
-          <div class="mycard-img-top"> <img src="/img/cards_img/project6.png" class="card-img-new " alt="...">
-          </div>
+        <div class="card mycard mb-4">
+          <div class="mycard-img-top"><img src="/img/cards_img/project5.png" class="card-img " alt="..."></div>
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
+            <div class="card-title">
+              <h4>Terra Exclusive</h4>
+              <h5>נושמים ירוק</h5>
+            </div>
+            <p class="card-text">הקמה ובנייה של עמוד נחיתה עבור Terra Exclusive, כולל טופס אינטראקטיבי, פריסה עיצובית
+              ייחודית, ותצוגה מותאמת לכל מכשיר
+              בעזרת HTML, CSS ו־Bootstrap.
             </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="/middle-stage/project5.html" class="btn btn-primary  my-btn-pink" style="direction: rtl;">לצפייה
+              בפרוייקט<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
+              </svg> </a>
           </div>
         </div>
       </div>

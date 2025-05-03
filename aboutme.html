@@ -18,87 +18,6 @@
       scroll-behavior: smooth;
     }
 
-    .all-myservice h1 {
-      margin-top: 100px;
-      font-size: 4rem;
-      text-align: center;
-    }
-
-
-
-    .about-img {
-      z-index: -100000;
-      flex: 0 0 600px;
-      /* גודל קבוע לתמונה */
-      position: sticky;
-      top: 70px;
-      /* כמה רחוק מהחלק העליון */
-      height: 700px;
-    }
-
-    .about-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-
-
-    }
-
-    .aboutme-warpper {
-
-      background-color: white;
-    }
-
-    .about-text h2 {
-      margin-top: 36px;
-    }
-
-    .about-text {
-      direction: rtl;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-
-
-    }
-
-    .features {
-      margin-right: 100px;
-    }
-
-    .contactme {
-      background: linear-gradient(135deg, var(--color-bg-main), var(--color-navy-dark));
-      ;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      direction: rtl;
-      gap: 60px;
-      height: 100vh;
-    }
-
-    .contactme-form-head {
-      padding-bottom: 30px;
-
-      font-size: 2rem;
-    }
-
-    .contactme-form input {
-      background-color: transparent;
-      padding: 10px;
-      border: 0 solid;
-      border-bottom: 1px solid #ffffff;
-      border-radius: 0;
-    }
-
-    .contactme-form {
-      font-size: 1.2rem;
-      color: white;
-    }
-
-    .padding-left {
-      padding-left: 40px;
-    }
 
     .aboutmepage-headimg-img-warpper {
       z-index: -10000;
@@ -112,10 +31,48 @@
       width: 100%;
     }
 
+    .aboutme-header-text {
+      justify-content: flex-end;
+      height: 600px;
+      direction: rtl;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      animation: slideInLeft 1.2s ease-out forwards;
+    }
+
+    @keyframes slideInLeft {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .about-text h2 {
+      margin-top: 36px;
+    }
+
+
     .check {
-      margin-top: 500px;
-      font-size: 2rem;
+      direction: rtl;
+      text-align: justify;
+
+      font-size: 1.5rem;
       background-color: #ffffff;
+      line-height: 1.9;
+    }
+
+    .check P {
+      margin-bottom: 20PX;
+    }
+
+    .check p:nth-child(1) {
+      font-weight: 600;
     }
   </style>
 </head>
@@ -146,82 +103,57 @@
           <a class="nav-link  fs-4" aria-current="page" href="index.html?from=aboutme">דף הבית</a>
           <a class="nav-link  fs-4" href="projects.html">פרוייקטים</a>
           <a id="aboumeLink" class="nav-link active fs-4 " href="#aboutMe">אודות</a>
-          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="#" style="text-align:right;">צרו קשר <svg
-              xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          <a id="navbarBtn" class=" fs-4 my-contect-us-btn  " href="contactMe.html" style="text-align:right;">צרו קשר
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
               stroke="currentColor" style="width: 24px; height: 24px; margin-right: 8px;">
               <path stroke-linecap="round" stroke-linejoin="round"
                 d="m18.75 4.5-7.5 7.5 7.5 7.5m-6-15L5.25 12l7.5 7.5" />
             </svg></a>
 
 
-        </div>
 
-      </div>
-    </div>
+        </div>
   </nav>
 
   <!-- Header-->
-  <header class="aboutme-header text-center text-white  ">
 
 
 
-    <div class="aboutmepage-headimg-img-warpper"> <img class="aboutmepage-headimg-img" src="img/about2.jpg" alt="">
-    </div>
 
+  <div class="aboutmepage-headimg-img-warpper"> <img class="aboutmepage-headimg-img" src="img/about2.jpg" alt="">
+  </div>
+  <header class="aboutme-header text-center text-white">
     <div class="aboutme-header-content ">
 
-      <div class="aboutme-header-text">
-        <h1 class="aboutme-header-heading mb-0 lh-base">Hello, my name is Michal</h1>
-        <h2 class="aboutme-header mb-4 lh-lg " id="responsive-text">Former architect . <strong>Current
-            developer</strong>
-        </h2>
-        <p class="fs-3 lh-2 lh-base mobile-hide ">Learning to code at 40 taught me one thing: problem-solving is
-          timeless. <br> Proof that it’s never
-          too late
-          to start building
-          differently!</p>
-
-
-        <a class="btn btn-primary btn-xl mybutton mydark_button mt-5" href="projects.html">MY WORK</a>
+      <div class="aboutme-header-text slide-in-left">
+        <h1 class="aboutme-header-heading mb-0 lh-base">נעים להכיר, אני מיכל</h1>
+        <h2 class="aboutme-header mb-4 lh-lg" id="responsive-text">אדריכלית לשעבר. <strong>מפתחת בהווה</strong></h2>
+        <p class="fs-3 lh-2 lh-base mobile-hide">
+          עוסקת בפיתוח אתרים ואפליקציות עם חשיבה יצירתית, דיוק טכני, וירידה לפרטים.
+          משלבת עיצוב, קוד וניסיון חיים – כדי לייצר חוויות דיגיטליות שעובדות באמת.
+        </p>
       </div>
-    </div>
+      <div>
+        <a class="btn text-white btn-xl mybutton mydark_button mt-5" href="projects.html">MY WORK</a>
+
+      </div>
 
 
   </header>
-  <!-- service section 1-->
 
-  <div class="check">
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo illo quibusdam magni, tempore, rem ipsam maiores
-      cumque provident perspiciatis nobis dicta sapiente porro ipsum amet, reiciendis nihil architecto atque? Recusandae
-      quod minus quia incidunt error delectus saepe officia quibusdam, quasi quis? Mollitia pariatur ducimus dicta ullam
-      assumenda quis esse reiciendis dignissimos minus quibusdam cum quos aliquid, autem, deleniti eligendi voluptatum
-      veniam enim. Repellat ea possimus nihil alias ullam neque non reprehenderit nesciunt beatae doloremque architecto,
-      assumenda, quasi ipsa quo officiis. Nobis magni vel deserunt eius enim quo eligendi ad expedita alias? Adipisci
-      dolor explicabo ipsum, eius reiciendis at autem incidunt!</p>
-    p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo illo quibusdam magni, tempore, rem ipsam maiores
-    cumque
-    provident perspiciatis nobis dicta sapiente porro ipsum amet, reiciendis nihil architecto atque? Recusandae quod
-    minus
-    quia incidunt error delectus saepe officia quibusdam, quasi quis? Mollitia pariatur ducimus dicta ullam assumenda
-    quis
-    esse reiciendis dignissimos minus quibusdam cum quos aliquid, autem, deleniti eligendi voluptatum veniam enim.
-    Repellat
-    ea possimus nihil alias ullam neque non reprehenderit nesciunt beatae doloremque architecto, assumenda, quasi ipsa
-    quo
-    officiis. Nobis magni vel deserunt eius enim quo eligendi ad expedita alias? Adipisci dolor explicabo ipsum, eius
-    reiciendis at autem incidunt!</p>
-    p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo illo quibusdam magni, tempore, rem ipsam maiores
-    cumque
-    provident perspiciatis nobis dicta sapiente porro ipsum amet, reiciendis nihil architecto atque? Recusandae quod
-    minus
-    quia incidunt error delectus saepe officia quibusdam, quasi quis? Mollitia pariatur ducimus dicta ullam assumenda
-    quis
-    esse reiciendis dignissimos minus quibusdam cum quos aliquid, autem, deleniti eligendi voluptatum veniam enim.
-    Repellat
-    ea possimus nihil alias ullam neque non reprehenderit nesciunt beatae doloremque architecto, assumenda, quasi ipsa
-    quo
-    officiis. Nobis magni vel deserunt eius enim quo eligendi ad expedita alias? Adipisci dolor explicabo ipsum, eius
-    reiciendis at autem incidunt!</p>
+
+  <div class="check container">
+    <p>שמי מיכל ערמון, מפתחת אתרים ואפליקציות עם רקע של למעלה מ-10 שנים כאדריכלית ומתכננת ערים. את עולם הקוד פגשתי מתוך
+      סקרנות –
+      ונשארתי כי גיליתי בו את מה שתמיד אהבתי: פתרון בעיות, חשיבה מערכתית, ועבודה מדויקת עד לפרטים הקטנים.</p>
+    <p>היום אני משלבת בין ראייה עיצובית רחבה להבנה טכנית עמוקה. אני בונה ממשקים נגישים, אתרים רספונסיביים, וממשקים
+      אינטראקטיביים שמחוברים לאנשים.</p>
+    <p>אני לומדת full stack development בהאקריו, ומתמקדת בטכנולוגיות כמו JavaScript, React, HTML, CSS ו־Node.js – לצד
+      שימוש
+      בכלים גרפיים כמו פוטושופ, אילוסטרייטור ואפטר אפקטס.</p>
+    <p>אני מאמינה בעבודה נקייה, למידה מתמדת ויצירת פתרונות שלא רק נראים טוב – אלא גם עובדים טוב. כשאני לא מול המסך,
+      תמצאו אותי
+      רצה, מטיילת, או פשוט מסתכלת על העולם כאילו הוא wireframe.</p>
   </div>
   <script>
 
